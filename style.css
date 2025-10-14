@@ -200,9 +200,9 @@ body {
 }
 .line {
   height: 245px;
-  width: 210px;
+  width: 200px;
   font-family: "Courier Prime";
-  font-size: 7px;
+  font-size: 6px;
   display: flex;
   justify-content: center; /* Horizontally centers the child div(s) */
   align-items: center;
@@ -213,7 +213,7 @@ body {
 }
 
 .email {
-  font-size: 7px;
+  font-size: 6px;
 }
 .email:hover {
   display: block;
