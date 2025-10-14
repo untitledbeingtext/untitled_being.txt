@@ -1,0 +1,244 @@
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-bold {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.courier-prime-regular-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.courier-prime-bold-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.sedgwick-ave-display-regular {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+body {
+    font-family: "Courier Prime", monospace;
+    background-image: url(img/beige.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover {
+  width: 1880px;
+  height: 1040px;
+  margin: 0 auto;
+  background-image: url(img/brown.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center; /* Horizontally centers the child div(s) */
+  align-items: center;
+  border-radius: 2px;
+}
+.author-label {
+  width: 400px;
+  height: 1000px;
+  background-image: url(img/beige.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;  /* stack children vertically */
+  justify-content: space-between; /* top div goes up, bottom div goes down */
+  align-items: center;
+  margin: auto auto;
+  border-radius: 2px;
+}
+.label {
+  width: 360px;
+  height: 206px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*border: solid 1px black;*/
+  display: flex;
+  justify-content: center; /* Horizontally centers the child div(s) */
+  align-items: center;
+  text-align: center;
+  border-radius: 2px;
+}
+.author-name {
+ font-family: "UnifrakturMaguntia";
+ font-size: 100px; 
+ color: #4e4035;
+}
+.line {
+  height: 360px;
+  width: 320px;
+  font-family: "Courier Prime";
+  font-size: 12.5px;
+  display: flex;
+  justify-content: center; /* Horizontally centers the child div(s) */
+  align-items: center;
+  text-align: center;
+  color: #4e4035;
+  border-top: #4e4035 solid 1px ;
+  border-bottom: #4e4035 solid 1px ;
+}
+
+.email {
+  font-size: 12.5px;
+}
+.email:hover {
+  display: block;
+  background-image: url(img/brown.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: beige;
+  transition: 0.5s;
+  padding: 2px;
+  cursor: pointer;
+}
+.author {
+  width: 360px;
+  height: 360px;
+  /*border: solid 1px black;*/
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 2px;
+}
+.author-photo {
+  width: 360px;
+  height: 360px;
+  border-radius: 2px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* 🌿 MEDIA QUERIES FOR SMALL SCREENS */
+@media (max-width: 768px) {
+.cover {
+  width: 725px;
+  height: 1325px;
+  margin: 0 auto;
+  background-image: url(img/brown.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center; /* Horizontally centers the child div(s) */
+  align-items: center;
+  border-radius: 2px;
+}
+}
+@media (max-width: 480px) {
+  .cover {
+  width: 455px;
+  height: 825px;
+  margin: 0 auto;
+  background-image: url(img/brown.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center; /* Horizontally centers the child div(s) */
+  align-items: center;
+  border-radius: 2px;
+}
+.author-label {
+  width: 250px;
+  height: 625px;
+  background-image: url(img/beige.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;  /* stack children vertically */
+  justify-content: space-between; /* top div goes up, bottom div goes down */
+  align-items: center;
+  margin: auto auto;
+  border-radius: 2px;
+}
+.label {
+  width: 225px;
+  height: 129px;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  /*border: solid 1px black;*/
+  display: flex;
+  justify-content: center; /* Horizontally centers the child div(s) */
+  align-items: center;
+  text-align: center;
+  border-radius: 2px;
+}
+.author-name {
+ font-family: "UnifrakturMaguntia";
+ font-size: 62.5px; 
+ color: #4e4035;
+}
+.line {
+  height: 245px;
+  width: 200px;
+  font-family: "Courier Prime";
+  font-size: 8px;
+  display: flex;
+  justify-content: center; /* Horizontally centers the child div(s) */
+  align-items: center;
+  text-align: center;
+  color: #4e4035;
+  border-top: #4e4035 solid 1px ;
+  border-bottom: #4e4035 solid 1px  ;
+}
+
+.email {
+  font-size: 8px;
+}
+.email:hover {
+  display: block;
+  background-image: url(img/brown.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: beige;
+  transition: 0.5s;
+  padding: 2px;
+  cursor: pointer;
+}
+.author {
+  width: 225px;
+  height: 225px;
+  /*border: solid 1px black;*/
+  display: inline-block;
+  margin-bottom: 12.5px;
+  margin-top: 12.5px;
+  border-radius: 2px;
+}
+.author-photo {
+  width: 225px;
+  height: 225px;
+  border-radius: 2px;
+  object-fit: cover;
+  object-position: center;
+}
+}
