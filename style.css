@@ -97,9 +97,9 @@ body {
 }
 .line {
   height: 360px;
-  width: 320px;
+  width: 330px;
   font-family: "Courier Prime";
-  font-size: 12.5px;
+  font-size: 13px;
   display: flex;
   justify-content: center; /* Horizontally centers the child div(s) */
   align-items: center;
@@ -108,9 +108,15 @@ body {
   border-top: #4e4035 solid 1px ;
   border-bottom: #4e4035 solid 1px ;
 }
+.introduction {
+  display: block;
+  text-align: justify;
+}
 
 .email {
-  font-size: 12.5px;
+  display: block;
+  font-size: 13px;
+  text-align: center;
 }
 .email:hover {
   display: block;
@@ -157,8 +163,8 @@ body {
 }
 @media (max-width: 480px) {
   .cover {
-  width: 400px;
-  height: 775px;
+  width: 455px;
+  height: 825px;
   margin: 0 auto;
   background-image: url(img/brown.png);
   background-repeat: no-repeat;
@@ -202,7 +208,7 @@ body {
   height: 245px;
   width: 200px;
   font-family: "Courier Prime";
-  font-size: 6px;
+  font-size: 8px;
   display: flex;
   justify-content: center; /* Horizontally centers the child div(s) */
   align-items: center;
@@ -213,7 +219,7 @@ body {
 }
 
 .email {
-  font-size: 6px;
+  font-size: 8px;
 }
 .email:hover {
   display: block;
@@ -241,5 +247,4 @@ body {
   object-fit: cover;
   object-position: center;
 }
-
 }
