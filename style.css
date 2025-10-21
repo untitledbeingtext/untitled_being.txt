@@ -207,7 +207,7 @@ body {
 }
 .line {
   height: 245px;
-  width: 200px;
+  width: 220px;
   font-family: "Courier Prime";
   font-size: 8px;
   display: flex;
@@ -250,5 +250,6 @@ body {
 }
 
 }
+
 
 
