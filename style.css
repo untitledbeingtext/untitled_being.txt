@@ -111,6 +111,7 @@ body {
 .introduction {
   display: block;
   text-align: justify;
+  text-align-last: center;
 }
 
 .email {
@@ -249,3 +250,4 @@ body {
 }
 
 }
+
