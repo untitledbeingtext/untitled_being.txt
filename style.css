@@ -48,7 +48,7 @@
 
 body {
     font-family: "Courier Prime", monospace;
-    background-image: url(img/beige.png);
+    background-image: url(img/brown.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -247,4 +247,5 @@ body {
   object-fit: cover;
   object-position: center;
 }
+
 }
