@@ -62,7 +62,7 @@ html, body {
 .cover {
   font-weight: semi bold;
   width: 100%;
-  height: 1100px;
+  height: 1200px;
   padding: 0px 0px;
   margin: 0px 0px;
   background-image: url(img/author_sqr.png);
@@ -80,7 +80,7 @@ html, body {
   transition: 1s;
   font-weight: semi bold;
   width: 100%;
-  height: 1100px;
+  height: 1200px;
   padding: 0px 0px;
   margin: 0px 0px;
   background-image: url(img/author_sqr1.png);
@@ -122,13 +122,12 @@ html, body {
   font-weight: semi bold;
   z-index: 11;
   width: 100%;
-  height: 1500px;
+  height: 1370px;
   padding: 0px 0px;
   margin: 0px 0px;
   background-image: url(img/floor.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: center bottom;
   display: flex;
   justify-content: center; /* Horizontally centers the child div(s) */
   align-items: center;
@@ -138,7 +137,7 @@ html, body {
 .cover2{
   font-weight: semi bold;
   width: 100%;
-  height: 2200px;
+  height: 2075px;
   padding: 0px 0px;
   margin: 0px 0px;
   background-image: url(img/floor3b.png);
@@ -509,8 +508,7 @@ hr{
     position:absolute;
     inset:0;
     background-repeat:no-repeat;
-    background-size:auto 100%;
-    height: 200mm;
+    background-size:80% auto;
     background-position:right bottom;
     z-index:1;
     transition: all 0.5s ease-in-out;
