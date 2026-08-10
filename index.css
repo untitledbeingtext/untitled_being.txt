@@ -118,26 +118,20 @@ html, body {
   font-family: 'Courier New', Courier, monospace;
   color: #4e4035;
 }
-.cover1 {
-  font-weight: 600; /* Sửa sai cú pháp: dùng số 600 thay cho 'semi bold' */
+.cover1{
+  font-weight: semi bold;
   z-index: 11;
   width: 100%;
-  min-height: 100vh; /* Sửa height cố định thành chiều cao linh hoạt theo màn hình */
-  padding: 0;
-  margin: 0;
-  border: 2px solid red;
-
-  /* Xử lý đường dẫn & Ảnh nền */
-  background-image: url('./img/floor.png'); /* Dùng đường dẫn tương đối chuẩn */
+  height: 1450px;
+  padding: 0px 0px;
+  margin: 0px 0px;
+  background-image: url(img/floor.png);
   background-repeat: no-repeat;
-  background-size: cover; /* Sửa 'auto 100%' để ảnh phủ kín không bị méo/trống hai bên */
-  background-position: center; /* Căn ảnh vào giữa khung hình */
-
-  /* Flexbox căn giữa nội dung con */
+  background-size: auto 100%;
+  background-position: center bottom;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Horizontally centers the child div(s) */
   align-items: center;
-
   font-family: 'Courier New', Courier, monospace;
   color: #4e4035;
 }
