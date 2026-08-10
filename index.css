@@ -55,11 +55,14 @@
 }
 
 html, body {
+  place-items: center;
   width: 100%;
   height: 100%;
   margin: 0;
 }
 .cover {
+  position:relative;
+  z-index: 2;
   font-weight: semi bold;
   width: 100%;
   height: 975px;
@@ -77,6 +80,8 @@ html, body {
 }
 .cover:hover {
   cursor: pointer;
+  position:relative;
+  z-index: 2;
   transition: 1s;
   font-weight: semi bold;
   width: 100%;
@@ -120,7 +125,8 @@ html, body {
 }
 .cover1{
   font-weight: semi bold;
-  z-index: 11;
+  position:relative;
+  z-index: 1;
   width: 100%;
   aspect-ratio: 600 / 461;
   padding: 0px 0px;
@@ -184,6 +190,10 @@ html, body {
   margin: 30px auto; 
   transition: 1s;
   transform:scale(1.005);
+}
+.cover_right_r{
+  position: relative;
+  z-index: 2;
 }
 .project {
   margin-top: 10mm;
@@ -544,7 +554,7 @@ hr{
 }
 .apple, .calendar{
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:auto 100%;
     background-position:left bottom;
     z-index:1;
     filter: brightness(1)
