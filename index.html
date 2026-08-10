@@ -26,26 +26,14 @@
         <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body style="overflow-x: hidden;">
 <!-- COVER -->
-    <div class="cover" style="display: grid; grid-template-columns: 1fr 110mm 220mm 1fr; align-items:start;">
-        <div>
-            <div style="height: 225mm;">a</div>
-            <div style="height: 200mm;">a</div>
-            <div class="interior_zone">
-                <div class="sword" style="background-image: url(img/sword.png);">
-                    <div class="interior-grid" style="display: grid; grid-template-rows: 100mm 95mm 57mm;">
-                        <div></div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr;">
-                            <div></div>
-                            <div class="sword"></div>
-                        </div>
-                        <div style="display: grid; grid-template-columns: 5mm 1fr;">
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                </div>
+    <div class="cover" style="display: grid; grid-template-columns: 100mm 110mm 220mm 100mm; align-items:start;">
+        <div style="width: 100mm;">
+            <div style="height: 225mm;">Mene Mene</div>
+            <div style="height: 230mm;">Tekel Upharsin</div>
+            <div class="interior_zone" style="display: flex; justify-content: flex-end; height: 225mm;">
+                <div class="sword" style="background-image: url(img/sword.png);width: 80mm; margin-left: 25mm;"></div>
             </div>
         </div>
         <div class="cover_left" style="display: grid; grid-template-rows: 285mm 1fr;">
@@ -258,20 +246,18 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div style=" display: grid; grid-template-rows: 300mm 70mm 200mm;">
             <div style="height: 350mm;"></div>
             <div class="calendar" style="height: 75mm;background-image: url(img/calendar.png);"></div>
-            <div class="interior_zone">
-                <div class="plant">
-                    <div class="interior-grid" style="display: grid; grid-template-rows: 100mm 95mm 57mm;">
+            <div class="interior_zone" style=" height: 200mm;">
+                <div class="plant" style="width: 145mm;height: 250mm;">
+                    <div class="interior-grid" style="display: grid; grid-template-rows: 200mm 25mm 57mm;">
                         <div></div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr;">
-                            <div class="thread" style="background-image:url(img/thread.png);"></div>
-                            <div></div>
+                        <div style="display: flex; align-content: flex-end;">
+                            <div class="thread" style="background-image:url(img/thread.png); width: 30mm; height: 45mm; margin-left: 15mm;"></div>
                         </div>
-                        <div style="display: grid; grid-template-columns: 5mm 1fr;">
-                            <div></div>
-                            <div class="shoes" style="background-image: url(img/shoes.png);"></div>
+                        <div>
+                            <div class="shoes" style="background-image: url(img/shoes.png); width: 80mm; height: 80mm; margin-left: 5mm;"></div>
                         </div>
                     </div>
                 </div>
@@ -279,7 +265,7 @@
         </div>
     </div>
 <!-- COVER 1 -->
-    <div class="cover1" style="display: grid; grid-template-columns: 1fr 130mm 195mm 1fr; align-items:start; overflow-x: hidden;">
+    <div class="cover1" style="display: grid; grid-template-columns: 100mm 130mm 195mm 100mm; align-items:start;">
         <div></div>
         <div style="display: grid; grid-template-rows: 420mm 10mm;">
             <div></div>
@@ -292,12 +278,11 @@
         <div></div>
     </div>
 <!-- COVER 2 -->
-    <div class="cover2" style="display: grid; grid-template-columns: 1fr 330mm 1fr; align-items:start; overflow-x: hidden;">
-        <input type="checkbox" id="lamp-trigger" class="lamp-checkbox" style="display: none;">
-         <label for="lamp-trigger" class="lamp-container-label">
+    <div class="cover2" style="display: grid; grid-template-columns: 100mm 330mm 100mm; align-items:start;">
+         <label for="lamp-trigger" class="lamp-container-label" style="width: 90mm; margin-left: 20mm; margin-top: 40mm;">
              <div class="lamptext" style="height: 175mm;display: grid; grid-template-rows: 10mm 50mm;">
                 <div class="lampt" style="height: 175mm; background-size: 115% auto; background-repeat: no-repeat; background-position: bottom;"></div>
-                <div class="ltext" style="font-family: 'Rock Salt', cursive; display: flex; align-items: flex-end; text-align: center; margin-left: 15mm; filter: drop-shadow(0px 0px 0px rgba(0,0,0,0)); height: 100mm; color: #002b59; line-height: 28px;"> I made this<br> for fun,<br> please don't judge</div>
+                <div class="ltext" style="font-family: 'Rock Salt', cursive; display: flex; align-items: flex-end; text-align: center; margin-left: 22.5mm; filter: drop-shadow(0px 0px 0px rgba(0,0,0,0)); height: 75mm; color: #002b59; line-height: 28px;"> I made this<br> for fun,<br> please don't judge</div>
             </div>
         </label>
         <div style="height: 224mm; display: grid; grid-template-rows: 15mm 220mm;">
