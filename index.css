@@ -127,7 +127,7 @@ html, body {
   margin: 0px 0px;
   background-image: url(img/floor.png);
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: 100% auto;
   background-position: center bottom;
   display: flex;
   justify-content: center; /* Horizontally centers the child div(s) */
