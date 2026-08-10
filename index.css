@@ -62,7 +62,7 @@ html, body {
 .cover {
   font-weight: semi bold;
   width: 100%;
-  height: 1000px;
+  height: 975px;
   padding: 0px 0px;
   margin: 0px 0px;
   background-image: url(img/author_sqr.png);
@@ -80,7 +80,7 @@ html, body {
   transition: 1s;
   font-weight: semi bold;
   width: 100%;
-  height: 1000px;
+  height: 975px;
   padding: 0px 0px;
   margin: 0px 0px;
   background-image: url(img/author_sqr1.png);
