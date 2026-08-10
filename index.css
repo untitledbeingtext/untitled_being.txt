@@ -122,12 +122,12 @@ html, body {
   font-weight: semi bold;
   z-index: 11;
   width: 100%;
-  aspect-ratio: 600/461;
+  aspect-ratio: 600 / 461;
   padding: 0px 0px;
   margin: 0px 0px;
   background-image: url(img/floor.png);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   display: flex;
   justify-content: center; /* Horizontally centers the child div(s) */
   align-items: center;
@@ -137,7 +137,7 @@ html, body {
 .cover2{
   font-weight: semi bold;
   width: 100%;
-  height: 2075px;
+  aspect-ratio: 3000 / 3420;
   padding: 0px 0px;
   margin: 0px 0px;
   background-image: url(img/floor3b.png);
