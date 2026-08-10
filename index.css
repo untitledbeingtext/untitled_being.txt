@@ -59,9 +59,14 @@ html, body {
   height: 100%;
   margin: 0;
 }
+.body{
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
 .cover {
   font-weight: semi bold;
-  width: 100%;
+  width: 100vw;
   height: 975px;
   padding: 0px 0px;
   margin: 0px 0px;
@@ -79,7 +84,7 @@ html, body {
   cursor: pointer;
   transition: 1s;
   font-weight: semi bold;
-  width: 100%;
+  width: 100vw;
   height: 975px;
   padding: 0px 0px;
   margin: 0px 0px;
@@ -121,7 +126,7 @@ html, body {
 .cover1{
   font-weight: semi bold;
   z-index: 11;
-  width: 100%;
+  width: 100vw;
   aspect-ratio: 600 / 461;
   padding: 0px 0px;
   margin: 0px 0px;
@@ -136,7 +141,7 @@ html, body {
 }
 .cover2{
   font-weight: semi bold;
-  width: 100%;
+  width: 100vw;
   aspect-ratio: 3000 / 3420;
   padding: 0px 0px;
   margin: 0px 0px;
