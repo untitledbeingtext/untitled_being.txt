@@ -56,23 +56,63 @@
 
 html, body {
   width: 100%;
-  height: 100%;
   margin: 0;
-}
-.body{
-  width: 100vw;
-  min-height: 100vh;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
+body{
+    background-image: url(img/dark\ brown.png);
+    /*background-color: #cdefef;*/
+    overflow-x: hidden;
+}
+.background {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 530mm;
+  margin: 0 auto;
+}
+
+.cover, .cover1, .cover2 {
+  width: 100%;
+  background-position: center bottom;
+  background-size: auto 100%;     
+  background-repeat: repeat-x;
+}
+
 .cover {
-  font-weight: semi bold;
-  width: 100vw;
-  height: 975px;
-  padding: 0px 0px;
-  margin: 0px 0px;
-  background-image: url(img/author_sqr.png);
+  background-image: url('img/author_sqr.png');
+  height: 1000px;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-position: top center;
+}
+
+.cover1 {
+  background-image: url('img/floor.png');
+  height: 1575px;
+}
+
+.cover2 {
+  background-image: url('img/floor3b.png');
+  height: 2300px;
+}
+.contents {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 530mm;
+  max-width: 5000mm;
+  z-index: 10;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 0px 0px;
+  margin: 0px 0px;
   display: flex;
   justify-content: center; /* Horizontally centers the child div(s) */
   align-items: center;
@@ -80,17 +120,11 @@ html, body {
   color: #4e4035;
   transition: all 1s ease-in-out;
 }
-.cover:hover {
+.content:hover {
   cursor: pointer;
   transition: 1s;
-  font-weight: semi bold;
-  width: 100vw;
-  height: 975px;
   padding: 0px 0px;
   margin: 0px 0px;
-  background-image: url(img/author_sqr1.png);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
   display: flex;
   justify-content: center; /* Horizontally centers the child div(s) */
   align-items: center;
@@ -123,31 +157,20 @@ html, body {
   font-family: 'Courier New', Courier, monospace;
   color: #4e4035;
 }
-.cover1{
-  font-weight: semi bold;
-  z-index: 11;
-  width: 100vw;
-  aspect-ratio: 600 / 461;
+.content1{
+  position: relative;
+  z-index: 1;
   padding: 0px 0px;
   margin: 0px 0px;
-  background-image: url(img/floor.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   display: flex;
   justify-content: center; /* Horizontally centers the child div(s) */
   align-items: center;
   font-family: 'Courier New', Courier, monospace;
   color: #4e4035;
 }
-.cover2{
-  font-weight: semi bold;
-  width: 100vw;
-  aspect-ratio: 3000 / 3420;
+.content2{
   padding: 0px 0px;
   margin: 0px 0px;
-  background-image: url(img/floor3b.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center; /* Horizontally centers the child div(s) */
   align-items: center;
@@ -513,7 +536,7 @@ hr{
     position:absolute;
     inset:0;
     background-repeat:no-repeat;
-    background-size:90% auto;
+    background-size:85% auto;
     background-position:right bottom;
     z-index:1;
     transition: all 0.5s ease-in-out;
@@ -832,36 +855,32 @@ hr{
         drop-shadow(0 8px 15px rgba(0,0,0,.35));
 }
 
-/*.clock{
-  transition: all 2s ease-in-out;
-  background-image: url(img/clockfront.png);
-  filter: brightness(1.05)
+.lizard{
+  transition: all 0.5s ease-in-out;
+  background-image: url(img/lizard.png);
+  filter: brightness(1.25)
           drop-shadow(0 0px 2px rgba(0,0,0,0.5));
 }
-.clock:hover{
+.lizard:hover{
   position: relative;
   z-index: 1;
-  background-image: url(img/clockside.png);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: bottom;
   cursor: pointer;
   transition: 0.5s;
+  transform:scale(1.1);
     filter:
-        brightness(1.05)
+        brightness(1.5)
         drop-shadow(0 8px 15px rgba(0,0,0,.35));
-}*/
+}
 
 
 
 .gallery-grid {
       column-count: 6; 
-      column-gap: 12px; 
+      column-gap: 12px;
     }
 
     
     .gallery-item {
-      
       break-inside: avoid; 
       margin-bottom: 12px;
       position: relative;
@@ -898,17 +917,3 @@ hr{
         brightness(1.05)
         drop-shadow(0 0px 5px rgba(0,0,0,.35));
     }
-    
-    /* Responsive: Tự động điều chỉnh số cột theo độ rộng màn hình */
-    /*@media (max-width: 1400px) {
-      .gallery-grid { column-count: 5; }
-    }
-    @media (max-width: 1100px) {
-      .gallery-grid { column-count: 4; }
-    }
-    @media (max-width: 800px) {
-      .gallery-grid { column-count: 3; }
-    }
-    @media (max-width: 500px) {
-      .gallery-grid { column-count: 2; }
-    }*/

@@ -24,19 +24,24 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="index1.css">
 </head>
-<body style="overflow-x: hidden; width: 100vw;">
-<!-- COVER -->
-    <div class="cover" style="display: grid; grid-template-columns: 100mm 110mm 220mm 100mm; align-items:start;">
-        <div style="width: 100mm;">
+<body style="overflow-x: hidden; position: relative;">
+    <div class="background">
+        <div class="cover"></div>
+        <div class="cover1"></div>
+        <div class="cover2"></div>
+    </div>
+    <div class="contents" style="display: grid; grid-template-rows: 650mm 10mm 200mm; max-height: 1000px; margin-top: auto; margin-bottom: auto;">
+        <div class="content" style="display: grid; grid-template-columns: 100mm 110mm 220mm 100mm; align-items:start;">
+            <div style="width: 100mm;">
             <div style="height: 225mm;">Mene Mene</div>
             <div style="height: 230mm;">Tekel Upharsin</div>
             <div class="interior_zone" style="display: flex; justify-content: flex-end; height: 225mm;">
-                <div class="sword" style="background-image: url(img/sword.png);width: 80mm; margin-left: 25mm;"></div>
+                <div class="sword" style="background-image: url(img/sword.png);width: 80mm; margin-left: 25mm; margin-bottom: 15mm;"></div>
             </div>
         </div>
-        <div class="cover_left" style="display: grid; grid-template-rows: 285mm 1fr;">
+        <div class="cover_left" style="display: grid; grid-template-rows: 285mm 220mm;">
             <div class="cover_left_start" style=" background-image: url(img/beige.png);">
                 <div style="padding: 0px 0px;font-weight: bold; font-size: 27mm; text-align: center; font-family:UnifrakturMaguntia; margin: 0px 0px;"> untitled_<br>being.txt</div>
                 <div style="text-align: justify; text-align-last: center;font-weight: bold;"><hr>Hello, my name is Giao Phan.<br>
@@ -246,7 +251,7 @@
                 </div>
             </div>
         </div>
-        <div style=" display: grid; grid-template-rows: 340mm 40mm 200mm;">
+        <div style=" display: grid; grid-template-rows: 330mm 40mm 200mm;">
             <div style="height: 350mm;"></div>
             <div class="calendar" style="height: 75mm;background-image: url(img/calendar.png); width: 125mm; background-size: auto 100%;"></div>
             <div class="interior_zone" style=" height: 200mm;">
@@ -263,26 +268,24 @@
                 </div>
             </div>
         </div>
-    </div>
-<!-- COVER 1 -->
-    <div class="cover1" style="display: grid; grid-template-columns: 100mm 130mm 195mm 100mm; align-items:start;">
-        <div></div>
-        <div style="display: grid; grid-template-rows: 420mm 10mm;">
+        </div>
+        <div class="content1" style="display: grid; grid-template-columns: 100mm 130mm 195mm 100mm; align-items:start;">
+            <div></div>
+        <div style="display: grid; grid-template-rows: 19mm 10mm;">
             <div></div>
             <div class="bird" style="height: 27.5mm; background-image: url(img/bird\ left.png); background-repeat: no-repeat; background-position: left bottom; background-size: 27.5% auto; filter: drop-shadow(8px 8px 8px rgba(0,0,0,0.35));transition: all 1s ease-in-out;"></div>
         </div>
-        <div style="display: grid; grid-template-rows: 407.5mm 10mm;">
+        <div style="display: grid; grid-template-rows: 7.5mm 10mm;">
             <div></div>
             <div class="snake" style="height: 25mm; background-image: url(img/snake.png); background-repeat: no-repeat; background-position: left bottom; background-size: 100% auto;"></div>
         </div>
         <div></div>
-    </div>
-<!-- COVER 2 -->
-    <div class="cover2" style="display: grid; grid-template-columns: 100mm 330mm 100mm; align-items:start;">
-         <label for="lamp-trigger" class="lamp-container-label" style="width: 90mm; margin-left: 20mm; margin-top: 40mm;">
+        </div>
+        <div class="content2" style="display: grid; grid-template-columns: 100mm 330mm 100mm; align-items:start; margin-top: 20mm;">
+            <label for="lamp-trigger" class="lamp-container-label" style="width: 90mm; margin-left: 10mm; margin-top: 40mm;">
              <div class="lamptext" style="height: 175mm;display: grid; grid-template-rows: 10mm 50mm;">
                 <div class="lampt" style="height: 175mm; background-size: 115% auto; background-repeat: no-repeat; background-position: bottom;"></div>
-                <div class="ltext" style="font-family: 'Rock Salt', cursive; display: flex; align-items: flex-end; text-align: center; margin-left: 22.5mm; filter: drop-shadow(0px 0px 0px rgba(0,0,0,0)); height: 75mm; color: #002b59; line-height: 28px;"> I made this<br> for fun,<br> please don't judge</div>
+                <div class="ltext" style="font-family: 'Rock Salt', cursive; display: flex; align-items: flex-end; text-align: center; margin-left: 25mm; filter: drop-shadow(0px 0px 0px rgba(0,0,0,0)); height: 75mm; color: #002b59; line-height: 28px;"> I made this<br> for fun,<br> please don't judge</div>
             </div>
         </label>
         <div style="height: 224mm; display: grid; grid-template-rows: 15mm 220mm;">
@@ -618,16 +621,19 @@
                 </div>
             </div>
         </div>
-            
         </div>
-        <div class="clock" style="height: 100mm; background-size: 60% auto; background-repeat: no-repeat; background-position: right bottom;"></div>
-        <!-- DIV HÌNH ARTWORKS -->
+        <div style="height: 50mm; margin-top: 80mm;width: 75mm;">
+            <div  class="lizard" style="background-size: auto 100%; background-repeat: no-repeat; background-position: right bottom; height: 60mm;"></div>
+        </div>
+        </div>
         <div></div>
-        <div style="height: 200mm;display: grid; grid-template-rows: 19mm 220mm; margin-left: 2.5mm;">
+        <div style="height: 200mm;display: grid; grid-template-rows: 19mm 220mm; margin-left: auto; margin-right: auto; margin-top: 50mm;">
             <div class = "cover_right_start" style="font-family:Rock Salt; color:  #002b59; font-size: 13px; padding: 0px 15px; text-align: left; letter-spacing: 2px; margin-left: 70mm;">
                 <div class="cover_right_start1" style="width: 240mm; height: 17.5mm; background-image: url(img/lime.png); padding: 7px 20px; line-height: 26px;">
-                    <div>The main compartment is orderly, but the crisper drawer is pure experimental mess.<br>To save you the trouble of rummaging through, I’ve spread it all out right on the floor :'></div></div></div>
-            <div class="gallery-grid">
+                    <div>The main compartment is orderly, but the crisper drawer is pure experimental mess.<br>To save you the trouble of rummaging through, I’ve spread it all out right on the floor :'></div>
+                </div>
+            </div>
+            <div class="gallery-grid" style="width: 330mm;">
                 <div class="gallery-item">
                     <img class="draw" src="img/60E9C281-8FF0-4E8D-B463-5166B96FF7DE.jpg" alt="Art Piece">
                     <div class="caption">Simpatico, 2025. Experiment with Ps gradient map.</div>
@@ -668,22 +674,10 @@
                     <img class="draw" src="img/IMG_2872.PNG" alt="Art Piece">
                     <div class="caption">Alienation, 2025. Experiment with Ps gradient map.</div>
                 </div>
-                <!--<div class="gallery-item">
-                    <img class="draw" src="img/IMG_7469.JPG" alt="Art Piece">
-                    <div class="caption">KAA Gallery, 2023.</div>
-                </div>
-                <div class="gallery-item">
-                    <img class="draw" src="img/IMG_7467.JPG" alt="Art Piece">
-                    <div class="caption">KAA Gallery, 2023.</div>
-                </div>-->
                 <div class="gallery-item">
                     <img class="draw" src="img/A8903BBD-F4F3-4F5B-AAAB-CC8451482851.jpg" alt="Art Piece">
                     <div class="caption">Bông mít, 2022.</div>
                 </div>
-                <!--<div class="gallery-item">
-                    <img class="draw" src="img/image.jpeg" alt="Art Piece">
-                    <div class="caption">Ping pong squad, 2022.</div>
-                </div>-->
                 <div class="gallery-item">
                     <img class="draw" src="img/original.gif" alt="Art Piece">
                     <div class="caption">Freakin' fridge, 2026.</div>
@@ -696,22 +690,6 @@
                     <img class="draw" src="SUMIKURA/Artboard 1.jpg" alt="Art Piece">
                     <div class="caption">Sumikura's artboard, 2026.</div>
                 </div>
-                <!--<div class="gallery-item">
-                    <img class="draw" src="SUMIKURA/FRAME 3.png" alt="Art Piece">
-                    <div class="caption">Sumikura's artboard, 2026.</div>
-                </div>
-                <div class="gallery-item">
-                    <img class="draw" src="SUMIKURA/kv 1.png" alt="Art Piece">
-                    <div class="caption">Sumikura's artboard, 2026.</div>
-                </div>
-                <div class="gallery-item">
-                    <img class="draw" src="SUMIKURA/Untitled-1.jpg" alt="Art Piece">
-                    <div class="caption">Sumikura's artboard, 2026.</div>
-                </div>-->
-                <!--<div class="gallery-item">
-                    <img class="draw" src="SUMIKURA/Untitled-2.jpg" alt="Art Piece">
-                    <div class="caption" >Sumikura's artboard, 2026.</div>
-                </div>-->
                 <div class="gallery-item">
                     <img class="draw" src="SUMIKURA/IMG_1026.JPG" alt="Art Piece">
                     <div class="caption">Sumikura's artboard, 2026.</div>
@@ -720,10 +698,6 @@
                     <img class="draw" src="SUMIKURA/Untitled_Artwork.jpg" alt="Art Piece">
                     <div class="caption">Sumikura's artboard, 2026.</div>
                 </div>
-                <!--<div class="gallery-item">
-                    <img class="draw" src="SUMIKURA/E1B706C3-C6B0-499A-A517-4B5E3E2DD009.jpg" alt="Art Piece">
-                    <div class="caption">I think this one is cute, 2026.</div>
-                </div>-->
                 <div class="gallery-item">
                     <img class="draw" src="SUMIKURA/JOCULAR.png" alt="Art Piece">
                     <div class="caption">Coltish, 2026.</div>
@@ -734,25 +708,5 @@
                 </div>
             </div>
         </div>
-        <div style="height: 200mm; display: grid; grid-template-rows: 100mm 100mm;">
-            <div class="earth" style="height: 192.5mm; background-image: url(img/short\ chair.png); background-repeat: no-repeat; background-position: bottom center; background-size: 75% auto; margin-top: 45mm; width: 50mm;">
-            <div><div class="earth" style="height: 155mm; background-image: url(img/shortplant.png); background-repeat: no-repeat; background-position: bottom center; background-size: 65% auto; width: 57.5mm;";></div></div>
-        </div>
-    </div>
-        <!-- DIV SÀN -->
-        <div style="height: 90mm;"></div>
-        <div style="height: 90mm;"></div>
-        <!--<div style="height: 90mm;margin-top: 15mm;">
-            <div style="width: 80mm;display: grid; grid-template-rows: 2mm 50mm;">
-                <div class="earth" style="height: 90mm; background-image: url(img/lowtable.png); background-repeat: no-repeat; background-position: bottom left; background-size: 100% auto; width: 115mm;" ></div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; width: 80mm;">
-                    <div class="earth" style="margin-left: 20mm;height: 35mm; background-image: url(img/coffee.png); background-repeat: no-repeat; background-position: bottom left; background-size: 100% auto; width: 20mm;" ></div>
-                    <div class="earth" style="margin-top: 10mm;height: 40mm; background-image: url(img/cherry.png); background-repeat: no-repeat; background-position: bottom left; background-size: 100% auto; width: 35mm;" ></div>
-                    <div></div>
-                </div>
-            </div>
-            <div></div>
-        </div>-->
-        <div style="height: 90mm; margin-top: 10mm;"><div class="earth" style="height: 90mm; background-image: url(img/earth\ plant.png); background-repeat: no-repeat; background-position: bottom left; background-size: auto 100%;" ></div></div>
     </div>
 </body>
