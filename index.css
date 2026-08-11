@@ -61,6 +61,14 @@ html, body {
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
 }
+
+/* Vá responsive nhanh: bọc toàn bộ trang trong wrapper này rồi
+   thu nhỏ bằng transform:scale() qua JS (xem script cuối index.html)
+   để layout mm cố định vừa khít màn hình nhỏ mà không cần thiết kế lại. */
+#scale-wrapper {
+  position: relative;
+  transform-origin: top left;
+}
 body{
     background-image: url(img/dark\ brown.png);
     /*background-color: #cdefef;*/
