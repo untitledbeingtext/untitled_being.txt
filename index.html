@@ -710,31 +710,23 @@
             </div>
         </div>
     </div>
-    </div><!-- /#scale-wrapper -->
+    </div>
 
-    <script>
-    // Trang được thiết kế cố định theo mm (~530mm rộng) cho màn hình desktop.
-    // Script này "thu nhỏ nguyên khối" toàn bộ trang theo tỉ lệ để vừa khít
-    // chiều ngang màn hình điện thoại/iPad, giữ nguyên layout gốc thay vì
-    // để nó vỡ hoặc bắt người dùng cuộn ngang.
-    (function () {
+    <script>(function () {
         var wrapper = document.getElementById('scale-wrapper');
-        var DESIGN_WIDTH_PX = 530 * 96 / 25.4; // 530mm quy đổi ra px ở 96dpi ≈ 2003px
+        var DESIGN_WIDTH_PX = 530 * 96 / 25.4;
 
         function fitToScreen() {
-            // Đo lại chiều cao tự nhiên trước khi scale
             wrapper.style.transform = 'none';
             wrapper.style.width = DESIGN_WIDTH_PX + 'px';
             var naturalHeight = wrapper.getBoundingClientRect().height;
 
             var scale = window.innerWidth / DESIGN_WIDTH_PX;
-            if (scale > 1) scale = 1; // màn hình lớn hơn thiết kế thì giữ nguyên kích thước gốc
+            if (scale > 1) scale = 1;
 
             wrapper.style.transformOrigin = 'top left';
             wrapper.style.transform = 'scale(' + scale + ')';
-
-            // Bù lại khoảng trống do transform không đẩy layout,
-            // để trang không để lại vùng trắng thừa bên dưới.
+            
             document.body.style.height = (naturalHeight * scale) + 'px';
             document.body.style.overflowX = 'hidden';
         }
